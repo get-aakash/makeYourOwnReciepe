@@ -1,0 +1,27 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #FAFAF8;
+}
+
+.header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
+  border-width: 1px;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: #e0e0e0;
+}
+
+.header-container>img {
+  height: 60px;
+}
+header >h1{
+  font-weight: 400;
+}
