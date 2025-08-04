@@ -4,14 +4,16 @@ const Main = () => {
     const ingredients = ['Chicken', "Oregano", "Tomatoes"]
     const [isImportant, setIsImportant] = React.useState("Yes")
     const [counter, setCounter] = React.useState(0)
+    const [isGoingOut, setIsGoingOut]  =React.useState(false)
+    const [myFavoriteThings, setmyFavoriteThings] = React.useState([])
 
     const mapIngredients = ingredients.map((item, index)=> <li key={index}>{item}</li>
         
     )
+    const myArray = ["a", "b","c","d"]
 
-    const isGoingOut = false
     function handleGoingOut(){
-         !isGoingOut
+          setIsGoingOut(!isGoingOut)
 
     }
     function handleOnClick(e){
@@ -19,6 +21,10 @@ const Main = () => {
         console.log("function clicked!!")
         setIsImportant("Definitely")
 
+    }
+    function addMyFavoriteThing(){
+        setmyFavoriteThings([...myFavoriteThings, "test"])
+        console.log(myFavoriteThings)
     }
     function handleDecrease(){
 
@@ -54,7 +60,9 @@ const Main = () => {
         <button className='plus' onClick={handleIncrease} aria-label='Increase count'>+</button>
       </div>
       <h1>Do i feel like going out tonight?</h1>
-      <button onClick={handleGoingOut}>{isGoingOut?isGoingOut:!isGoingOut}</button>
+      <button onClick={handleGoingOut}>{isGoingOut?"Yes":"False"}</button>
+
+      <button onClick={addMyFavoriteThing}>Add item</button>
     </main>
   )
 }
