@@ -61,11 +61,17 @@ main{
 }
 
 main {
-    height: 100vh;
-    display: flex;
+    height: 85vh;
+    display: grid;
     justify-content: center;
     align-items: center;
 }
+
+main > ul{
+  margin-top: 0;
+}
+
+
 
 .card {
     background-color: white;
@@ -109,4 +115,33 @@ main {
 .card .favorite-button:active {
     transform: none;
     box-shadow: none;
+}
+
+.myForm{
+  
+  width: 20%; 
+  margin: 10px auto;
+  padding: 30px 10px;
+  background-color: aquamarine;
+  border-radius: 20px;
+}
+
+.signupForm{
+  padding: 10px;
+  display: grid;
+  align-items: center;
+  
+}
+
+#email, #password, button{
+  padding: 8px;
+  border-radius: 12px;
+  width: 100%;
+}
+
+button{
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 5px;
 }

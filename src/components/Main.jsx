@@ -4,9 +4,7 @@ const Main = () => {
    const [ingredients, setIngredients] = React.useState([])
    
 
-    const handleOnSubmit =(e)=>{
-      e.preventDefault()
-      const formData = new FormData(e.target)
+    const handleOnSubmit =(formData)=>{
       const newIngredient = formData.get("ingredient")
       setIngredients([...ingredients, newIngredient])
         
@@ -14,17 +12,11 @@ const Main = () => {
     const value = ingredients.map((ingredient,i)=><li key={i}>{ingredient}</li>)
   return (
     <main>
-      <form onSubmit={handleOnSubmit}className='form-ingredient' action="" >
+      <form action={handleOnSubmit}className='form-ingredient' >
         <input aria-label='Add Ingredient' type="text" placeholder='e.g. oregano' name='ingredient'/>
         <button  type='submit' >Add Ingredient</button>
       </form>
       <ul>{value}</ul>
-      
-
-      
-      
-      
-
       
     </main>
   )
