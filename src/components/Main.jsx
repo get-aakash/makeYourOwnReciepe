@@ -16,7 +16,7 @@ const Main = () => {
         <input aria-label='Add Ingredient' type="text" placeholder='e.g. oregano' name='ingredient'/>
         <button  type='submit' >Add Ingredient</button>
       </form>
-      <ul>{value}</ul>
+      <ul className='ingredients-list'>{value}</ul>
       
     </main>
   )
