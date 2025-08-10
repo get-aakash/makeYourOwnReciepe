@@ -28,9 +28,18 @@ header >h1{
 main{
   padding: 30px 30px 10px;
   height: 85vh;
-  display: grid;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  gap: 10px;
+
+  
+}
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* UL starts where the form starts */
+  gap: 40px; /* small gap between form and UL */
 }
 
 .form-ingredient{
@@ -64,17 +73,60 @@ main{
   margin-right: 5px;
 }
 
-.ingredients-list {
-  margin-top: 0;
-    background-color: aqua;
+.form-wrapper>h2{
+  margin: 0px;
+}
+ul.ingredients-list {
+    margin-bottom: 48px;
+}
+ul.ingredients-list > li {
+    color: #475467;
+    line-height: 28px;
+}
+.get-recipe-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    background: #F0EFEB;
+    padding: 10px 28px;
 }
 
-main > ul{
-  margin-top: 0;
+.get-recipe-container h3 {
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.get-recipe-container p {
+    color: #6B7280;
+    font-size: 0.875rem;
+    line-height: 20px;
+}
+
+.get-recipe-container button {
+    border: none;
+    border-radius: 6px;
+    background: #D17557;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+    color: #FAFAF8;
+    padding: 9px 15px;
+    font-family: Inter, sans-serif;
+    font-size: 0.875rem;
+    cursor: pointer;
 }
 
 
+.suggested-recipe-container {
+    color: #475467;
+    line-height: 28px;
+    font-size: 1.125rem;
+    font-weight: 400;
+}
 
+.suggested-recipe-container ul li, .suggested-recipe-container ol li {
+    margin-bottom: 8px;
+}
 .card {
     background-color: white;
     width: 200px;
@@ -151,4 +203,27 @@ fieldset{
   margin: 12px 5px;
   display: flex;
   flex-direction: column;
+}
+
+.pad-container {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(2, 100px);
+    gap: 10px;
+}
+
+.pad-main > button{
+   height: 100px;
+    width: 100px;
+    border: 3px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.pad-main{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1C1917;
 }
