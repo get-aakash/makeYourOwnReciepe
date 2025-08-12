@@ -1,10 +1,16 @@
 import React from 'react'
 
-const MyPad = ({item}) => {
-    console.log(item)
+const MyPad = ({item, on}) => {
+    const [toggleOn, setToggleOn] = React.useState(on)
+
+    function handleButtonClick(){
+        setToggleOn(prevData=>!prevData)
+        console.log(toggleOn)
+    }
+    
   return (
     <div>
-        <button style={{backgroundColor:item}} ></button>
+        <button onClick={handleButtonClick} style={{backgroundColor:item}} className={toggleOn? "on":""} ></button>
       
     </div>
   )

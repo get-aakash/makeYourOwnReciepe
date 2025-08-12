@@ -10,9 +10,8 @@ const SoundPad = ({ darkMode }) => {
         <div className='pad-main'>
             <div className="pad-container">
                 {sound.map((item) => {
-                    console.log(item.color)
                     return (
-                        <MyPad item={item.color} />
+                        <MyPad item={item.color} on={item.on} />
                     )
                 })}
 
