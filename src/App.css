@@ -11,64 +11,53 @@ body {
 }
 
 .header-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.7rem;
-  border-width: 1px;
-  border-radius: 5px;
-  border-style: solid;
-  border-color: #e0e0e0;
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 11px;
+    height: 80px;
+    background-color: white;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.06);
 }
 
 .header-container>img {
-  height: 60px;
+  width: 50px;
 }
 header >h1{
   font-weight: 400;
 }
 main{
   padding: 30px 30px 10px;
-  height: 85vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
 
   
 }
-.form-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start; /* UL starts where the form starts */
-  gap: 40px; /* small gap between form and UL */
-}
+
 
 .form-ingredient{
   display: flex;
-  justify-content: center;
-  gap: 1rem;
-  height: 40px;
+    justify-content: center;
+    gap: 12px;
+    height: 38px;
 }
 
 .form-ingredient > input{
   border-radius: 6px;
-  border: 1px solid #D1D508;
-  padding: 9px 13px;
-  box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.05);
-  flex-grow: 1;
-  min-width: 150px;
-  max-width: 400px;
+    border: 1px solid #D1D5DB;
+    padding: 9px 13px;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+    flex-grow: 1;
+    min-width: 150px;
+    max-width: 400px;
 }
 .form-ingredient > button{
-  font-family:  sans-serif;
-  border-radius: 6px;
-  border: none;
-  background-color: #141413;
-  color: #FAFAF8;
-  width: 150px;
-  font-size: 0.87rem;
-  font-weight: 500;
+  font-family: Inter, sans-serif;
+    border-radius: 6px;
+    border: none;
+    background-color: #141413;
+    color: #FAFAF8;
+    width: 150px;
+    font-size: 0.875rem;
+    font-weight: 500;
 }
 .form-ingredient >button::before{
   content: "+";
@@ -78,13 +67,11 @@ main{
 .form-wrapper>h2{
   margin: 0px;
 }
-ul.ingredients-list {
-    margin-bottom: 48px;
-}
 ul.ingredients-list > li {
     color: #475467;
     line-height: 28px;
 }
+
 .get-recipe-container {
     display: flex;
     justify-content: space-between;
@@ -112,26 +99,22 @@ ul.ingredients-list > li {
     background: #D17557;
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
     color: #FAFAF8;
-    padding: 9px 15px;
+    padding: 9px 17px;
     font-family: Inter, sans-serif;
     font-size: 0.875rem;
     cursor: pointer;
 }
-
 
 .suggested-recipe-container {
     color: #475467;
     line-height: 28px;
     font-size: 1.125rem;
     font-weight: 400;
-     min-height: 150px;
-    
 }
 
 .suggested-recipe-container ul li, .suggested-recipe-container ol li {
     margin-bottom: 8px;
 }
-
 
 
 
