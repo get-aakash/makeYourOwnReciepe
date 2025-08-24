@@ -1,7 +1,9 @@
 *{
   box-sizing: border-box;
 }
-
+html {
+  overflow-y: scroll;
+}
 body {
   margin: 0;
   font-family: sans-serif;
@@ -122,121 +124,26 @@ ul.ingredients-list > li {
     line-height: 28px;
     font-size: 1.125rem;
     font-weight: 400;
+     min-height: 150px;
+    
 }
 
 .suggested-recipe-container ul li, .suggested-recipe-container ol li {
     margin-bottom: 8px;
 }
-.card {
-    background-color: white;
-    width: 200px;
-    border: 1px solid lightgray;
-    border-radius: 10px;
-    height: 350px;
-}
 
-.card .avatar {
-    width: 100%;
-    padding: 10%;
-    padding-bottom: 0;
-}
 
-.card .name {
-    margin-block: 13px;
-    color: #333333;
-}
 
-.card .info {
-    padding: 10px;
-}
 
-.card .favorite {
-    width: 25px;
-    cursor: pointer;
-}
 
-.card .contact {
-    font-size: 0.75rem;
-    color: gray;
-    margin-block: 7px;
-}
 
-.card .favorite-button {
-    border: none;
-    background: transparent;
-}
 
-.card .favorite-button:active {
-    transform: none;
-    box-shadow: none;
-}
 
-.myForm{
-  
-  width: 20%; 
-  margin: 10px auto;
-  padding: 30px 10px;
-  background-color: aquamarine;
-  border-radius: 20px;
-}
 
-.signupForm{
-  padding: 10px;
-  display: grid;
-  align-items: center;
-  
-}
 
-#email, #password, button, #description{
-  padding: 8px;
-  border-radius: 12px;
-  width: 100%;
-}
 
-button{
-  font-size: 20px;
-  font-weight: bold;
-  cursor: pointer;
-  margin-top: 5px;
-}
-fieldset{
-  margin: 12px 5px;
-  display: flex;
-  flex-direction: column;
-}
 
-.pad-container {
-    display: grid;
-    grid-template-columns: repeat(4, 100px);
-    grid-template-rows: repeat(2, 100px);
-    gap: 10px;
-}
 
-.pad-main > button{
-   height: 100px;
-    width: 100px;
-    border: 3px solid white;
-    border-radius: 5px;
-    cursor: pointer;
 
-}
 
-.pad-main{
-  display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #1C1917;
-}
 
-button {
-    height: 100px;
-    width: 100px;
-    border: 3px solid white;
-    border-radius: 5px;
-    cursor: pointer;   
-    opacity: 0.1;
-}
-
-button.on {
-    opacity: 1;
-}

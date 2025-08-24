@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Body = ({userName}) => {
+const Body = () => {
   return (
     <section>
-      <h1>welcome back,{userName}!</h1>
+      
     </section>
   )
 }
