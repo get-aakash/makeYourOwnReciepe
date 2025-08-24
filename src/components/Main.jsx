@@ -13,6 +13,16 @@ async function handleButtonClick(){
 
   const handleOnSubmit = (formData) => {
     const newIngredient = formData.get("ingredient")
+    if(newIngredient.length === 0){
+      return(
+        window.alert("The ingredient cannot be empty")
+      )
+    }
+    if(ingredients.includes(newIngredient)){
+      return(
+        window.alert("The ingredient is already on the list. Try new one!!")
+      )
+    }
     setIngredients([...ingredients, newIngredient])
 
   }
